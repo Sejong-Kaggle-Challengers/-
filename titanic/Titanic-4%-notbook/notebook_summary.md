@@ -2,6 +2,8 @@
 
 ## Notebook summary
 
+---
+
 ### 1. Data Load & Check
 
 #### 1-1. outlier detection
@@ -24,6 +26,8 @@
 > **'Cabin'** 과 **'Age'** 에서 많은 missing values를 확인했다.
 
 - **'Suvived'** 에서 발생한 missing values는 data set을 병합할 때 test에는 없는 target value이기 때문에 발생한 것이므로 신경쓰지 않아도 된다.
+
+---
 
 ### 2. Feature 분석
 
@@ -57,6 +61,8 @@
     > 생존률이 C Q S 순으로 높았는데, Pclass와 함께 분포를 살펴보니, 높은 생존률을 보인 탑승처의 승객이 더 높은 Passenger class를 가진 것으로 밝혀졌다.
     - mising value는 2개 뿐이어서 최빈값이 S로 채웠다.
 
+---
+
 ### 3. Filling missing Values
 
 #### Age
@@ -76,6 +82,8 @@
 > 따라서, missing values를 채우는 전략을 다음과 같이 결정하였다.
 
 > "'pclass', 'parch', 'sibsp' feature가 비슷한 row들의 age 평균으로 채고,  계산해내지 못하는 경우 전체 평균으로 채운다."
+
+---
 
 ### 4. Feature Engineering
 
@@ -104,6 +112,8 @@
 #### 4-4. Ticket
 
 > Ticket이 함께 prefix된 경우 함께 배치된 객실에 예약될 수 있다. 이는 pclass와 생존률이 비슷할 수 있다는 것을 의미한다. 따라서 ticket feature를 prefix 로 바꾸기로 했다. 그게 더 유으미 할 수 있을 것이라고 저자는 예상했다.
+
+---
 
 ### 5. Modeling
 
