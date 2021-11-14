@@ -1,0 +1,30 @@
+1. dtype, level, keep, variable 에 따라 큰 범위에서 차근차근.
+- 데이터 타입, binary인지 ordinal인지에 따른 encoding 방법 차이.
+
+2. 변수간의 범위가 다를 때는 스케일링을 생각하지만, 분류기에 따라 다르다.
+- 현재 공부하는 노트북의 스케일링은 마지막에 StandardScaler다. 
+- 다만, 2nd 솔루션에는 scaling이 없다. https://www.kaggle.com/yunhochung/2nd-place-lightgbm-solution
+
+3. 샘플링 방법에는 over와 under가 있다. 
+- over는 적은 데이터의 양을 키우는것. under는 작은 데이터에 맞추는것.
+
+4. target encoding
+- smoothing : 불균형한 데이터에서 한쪽에 치우쳐지기보단 global한 쪽에 맞춘 encoding 방법.
+- 그 외 참고 방법 https://dailyheumsi.tistory.com/120
+
+5. correlation 후에 implot으로 데이터 상관관계 보기
+- 필요한 변수들만 골라서 implot으로 선형성 보기. 
+- 위 노트북에서는 그냥 보기만 했다. seaborn을 사용하기에 효율적으로 확인할 수 있다.
+
+6. 변동성임계값 (variance threshold)
+- 변수들의 중요도를 카이제곱 검정 등의 방법으로 걸러내는 방법 중 하나이다.
+- 그냥 변수선택법이라고 외웠다. 위 노트북에서는 variance에 딱히 영향을 주지 않는.
+그런 변수들을 0.01 기준으로 잘랐다.
+
+7. feature selection(변동성 임계값으로 cut, model 결과에서 select), feature engineering
+- 위 노트북에서 가장 중요하게 강조하는 부분. 
+
+--Tip-- 
+Competition이 Shake up이 생길건지 간을 본다. 
+CV, LB차이가 크고 Unstable하면 Shake up일 발생할 여지가 있다
+- 2nd solution에서 본 내용. 짧은 시간 많이 제출해보면서 상황을 보며 본다.
