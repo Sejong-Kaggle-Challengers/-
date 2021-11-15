@@ -3,5 +3,5 @@
 ## [타이타닉 : Titanic - Machine Learning from Disaster](https://www.kaggle.com/c/titanic/overview)
 1. [Titanic Top 4% with ensemble modeling](https://www.kaggle.com/yassineghouzam/titanic-top-4-with-ensemble-modeling)
 2. [EDA To Prediction(DieTanic)](https://www.kaggle.com/ash316/eda-to-prediction-dietanic)
-3. [Introduction to Ensembling/Stacking in Python](https://www.kaggle.com/arthurtok/introduction-to-ensembling-stacking-in-python)
+3. [Introduction to Ensembling/Stacking in Python](https://www.kaggle.com/arthurtok/introduction-to-ensembling-stacking-in-python)<br>
     [오류코드 고친 노트북](https://www.kaggle.com/chae52/upd-2021-introduction-to-ensembling-stacking-in-py)
